@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://fonts.googleapis.com/css?family=El+Messiri');
+body
+{
+  font-family: 'El Messiri', sans-serif;
+	background-color: #ffff80;
+}
+.navbar, .heading
+{
+	background-color: #1f1f21;
+	color: white;
+}
+button
+{
+	border-radius: 5%;
+	width: 10%;
+	margin-left: 45%;
+}
+.panel,.panel-heading
+{
+	border-radius: 1%;
+  font-weight: bolder;
+  font-size: 22px;
+}
+.panel
+{
+  margin-top: 5%;
+  background-color: #fffdd0;
+  font-size: 20px;
+}
+select,textarea{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+      -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+          font-size: 16px;
+}
+
+select:focus,textarea:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+        -webkit-tap-highlight-color: transparent;
+}
+.button2
+{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background: #333;
+    /*margin: 10px;*/
+    border: none;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    color: #fff;
+    font-size: 16px;
+}
+.button2:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    font-size: 15px;
+    transition: 500ms;
+}
+.button2:focus {
+    outline: none;
+}
+.yellow:hover {
+        color: #ffc722;
+    text-shadow: 0px 0px 10px #ffc722;
+}
+.gb
+{
+ padding: 15px;
+}
+.gb:hover
+{
+  text-decoration: none;
+}
