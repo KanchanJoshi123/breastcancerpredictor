@@ -1,0 +1,66 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Breast Cancer Predictor</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/StyleHTML.css?1422585377" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-dark navbar-fixed-top">
+	 	<div class="container-fluid">
+	 	   <div class="navbar-header">
+                    <a href="index.php" class="navbar-brand" style="height: 80px;"><img src="../static/logo.jpg" style="margin-top: -15px; width:120px;height:80px; margin-left: -15px;"></a> 
+                </div>
+		</div>
+	</nav>
+	<br><br><br><br>
+<div class="container">
+<form  action="{{ url_for('predict')}}"method="POST">
+<div class="panel">
+	<div class="panel-heading heading">
+		BREAST CANCER PREDICTOR
+	</div>
+	<div class="panel-body">
+    <div class="row">
+    	<div class=col-lg-4>
+    		<label for="rm">Radius Mean</label>
+            <input type="text" class="form-control" id="rm" name="rm" placeholder="" required>
+    	</div>
+    	<!--<div class=col-lg-3>
+    		<label for="tm">Texture Mean</label>
+            <input type="text" class="form-control" id="tm" name="tm" placeholder="" required>
+    	</div> -->
+    	<div class=col-lg-4>
+    		<label for="pm">Perimeter Mean</label>
+            <input type="text" class="form-control" id="pm" name="pm" placeholder="" required>
+    	</div>
+    	<div class=col-lg-4>
+    		<label for="am">Area Mean</label>
+            <input type="text" class="form-control" id="am" name="am" placeholder="" required>
+    	</div>
+    </div><br>
+    <div class="row">
+    	<div class=col-lg-4>
+    		<label for="conm">Concavity Mean</label>
+            <input type="text" class="form-control" id="conm" name="conm" placeholder="" required>
+    	</div>
+    	<div class=col-lg-4>
+    		<label for="cpm">Concave Points Mean</label>
+            <input type="text" class="form-control" id="cpm" name="cpm" placeholder="" required>
+    	</div>
+    </div><br>
+    <button type="submit" class="noselect button2 yellow"><a href="Boutputpositive.html" style="text-decoration: none; color: white;">Submit</a></button>
+</div>	
+</div>
+</form>
+ <br>
+   <br>
+  
+
+</div>
+</body>
+</html>
