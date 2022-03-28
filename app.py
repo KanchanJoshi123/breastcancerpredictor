@@ -2,7 +2,7 @@ import joblib
 from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
-trans=joblib.load('Scalar.save')
+#trans=joblib.load('Scalar.save')
 model = joblib.load('model.save')
 
 @app.route('/')
