@@ -1,9 +1,11 @@
-import joblib
+#import joblib
 from flask import Flask, request, jsonify, render_template
+import pickle
 
+model = pickle.load(open('model_pkl','rb'))
 app = Flask(__name__)
-#trans=joblib.load('Scalar.save')
-model = joblib.load('model.save')
+
+#model = joblib.load('model.save')
 
 @app.route('/')
 def home():
