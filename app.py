@@ -19,7 +19,7 @@ def predict():
     d=request.form["am"]
     g=request.form["conm"]
     h=request.form["cpm"]
-    y=[[float(h),float(d),float(a),float(c),float(g)]]        
+    y=[[h,d,a,c,g]]        
     output = model.predict(y)
     if (output == 0):
     #if output == 0:
